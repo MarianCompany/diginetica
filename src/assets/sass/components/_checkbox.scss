@@ -1,0 +1,41 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    cursor: pointer;
+
+    &:hover &__inner {
+        border-color: $ui-c-brand;
+    }
+
+    &_active &__inner {
+        background-color: $ui-c-brand;
+        border-color: $ui-c-brand;
+    }
+
+    &__inner {
+        box-sizing: border-box;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $ui-c-border-dark;
+        border-radius: $ui-rounded-sm;
+        transition: background-color $ui-transition-time-fast, border-color $ui-transition-time-fast;
+    }
+
+    &__check {
+        width: 10px;
+        height: 8px;
+    }
+
+    &__label {
+        margin: 0;
+        font-family: $ui-font-content;
+        font-weight: 400;
+        font-size: 14px;
+        color: $ui-c-text;
+    }
+}

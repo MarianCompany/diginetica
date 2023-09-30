@@ -1,0 +1,38 @@
+.catalog {
+    &__wrapper {
+        margin-top: 12px;
+
+        @include from($b-lg) {
+            display: grid;
+            grid-template-columns: 280px minmax(0, 1fr);
+            gap: 36px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $ui-font-content;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 125%;
+        color: $ui-c-text;
+
+        @include from($b-lg) {
+            display: none;
+        }
+    }
+
+    &__product-list {
+        margin-top: 12px;
+
+        @include from($b-lg) {
+            margin-top: 0;
+        }
+    }
+
+    &__block {
+        @include from($b-lg) {
+            margin-top: 24px;
+        }
+    }
+}

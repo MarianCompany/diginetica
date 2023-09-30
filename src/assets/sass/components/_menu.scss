@@ -1,0 +1,40 @@
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 28px;
+
+    @include from($b-lg) {
+        display: flex;
+    }
+
+    &__item-header {
+        text-align: center;
+    }
+
+    &__item-header_space-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-content {
+        margin-top: 16px;
+    }
+
+    &__item-content:first-child {
+        margin-top: 0;
+    }
+
+    &__link {
+        font-family: $ui-font-content;
+        font-weight: 400;
+        font-size: 16px;
+        color: $ui-c-disabled;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: color $ui-transition-time-fast;
+    }
+
+    &__link:hover {
+        color: $ui-c-text;
+    }
+}

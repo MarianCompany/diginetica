@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    &__link {
+        font-family: $ui-font-header;
+        font-weight: 400;
+        font-size: 14px;
+        color: $ui-c-text;
+        line-height: 115%;
+        text-decoration: none;
+
+        cursor: pointer;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,45 @@
+.btn {
+    padding: 12px 16px;
+    font-family: $ui-font-content;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color: $ui-c-brand;
+
+    background-color: #FFFFFF;
+    border: 1px solid $ui-c-brand;
+    border-radius: $ui-rounded-sm;
+    cursor: pointer;
+    outline: none;
+    transition: background-color $ui-transition-time-fast, color $ui-transition-time-fast;
+
+    &:hover {
+        background-color: $ui-c-brand;
+        color: #FFFFFF;
+    }
+
+    &_full-width {
+        width: 100%;
+        text-align: center;
+    }
+
+    &_grey {
+        color: $ui-c-disabled;
+        border: 1px solid $ui-c-disabled;
+    }
+
+    &_grey:hover {
+        color: #FFFFFF;
+        background-color: $ui-c-disabled;
+    }
+
+    &_blue {
+        background-color: $ui-c-brand;
+        color: #FFFFFF;
+    }
+
+    &_blue:hover {
+        background-color: #FFFFFF;
+        color: $ui-c-brand;
+    }
+}

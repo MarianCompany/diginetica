@@ -1,0 +1,11 @@
+.price-range {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    &__divider {
+        flex-shrink: 0;
+        display: flex;
+    }
+}

@@ -1,0 +1,118 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    @include from($b-xl) {
+        gap: 16px;
+    }
+
+    &_not-available &__img-wrap {
+        filter: opacity(0.5);
+    }
+
+    &:hover &__img {
+        transform: scale(1.35);
+    }
+
+    &:hover &__name-text {
+        color: $ui-c-text-hovered;
+    }
+
+    &__preview {
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__bestseller {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 2;
+
+        @include from($b-phone) {
+            top: 12px;
+            left: 12px;
+        }
+    }
+
+    &__img-wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $ui-c-card-bg;
+    }
+
+    &__img {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        transition: transform $ui-transition-time-medium;
+        z-index: 1;
+    }
+
+    &__discount {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        z-index: 2;
+
+        @include from($b-phone) {
+            bottom: 12px;
+            left: 12px;
+        }
+    }
+
+    &__body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__brand-text {
+        margin: 0;
+        font-family: $ui-font-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 115%;
+        color: $ui-c-disabled;
+    }
+
+    &__name-text {
+        margin: 0;
+        font-family: $ui-font-content;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 115%;
+        color: $ui-c-text;
+
+        transition: color $ui-transition-time-medium;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    &__price-text {
+        margin: 0;
+        font-family: $ui-font-content;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 115%;
+        color: $ui-c-text;
+    }
+
+    &__price-text_old {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 115%;
+        color: $ui-c-disabled;
+        text-decoration: line-through;
+    }
+}

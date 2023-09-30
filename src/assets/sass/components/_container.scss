@@ -1,0 +1,21 @@
+.container {
+    box-sizing: content-box;
+    padding: 0 16px;
+
+    @include from($b-phone) {
+        max-width: 343px;
+        margin: 0 auto;
+    }
+
+    @include from($b-lg) {
+        max-width: 1240px;
+    }
+
+    @include from($b-xl) {
+        max-width: 1400px;
+    }
+
+    @include from($b-2xl) {
+        max-width: 1520px;
+    }
+}

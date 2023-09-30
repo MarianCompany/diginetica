@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    &__img {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__text {
+        margin: 0;
+        font-family: $ui-font-header;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 115%;
+    }
+}

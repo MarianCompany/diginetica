@@ -1,0 +1,48 @@
+.label {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: #fff;
+    border-radius: $ui-rounded-sm;
+
+    &_with-img {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 4px;
+    }
+
+    &_with-img &__img-wrap {
+        display: flex;
+    }
+
+    &_grey-bordered {
+        border: 1px solid $ui-c-border;
+    }
+
+    &_blue {
+        background: $ui-c-brand;
+    }
+
+    &__text {
+        margin: 0;
+
+        font-family: $ui-font-content;
+        font-weight: 440;
+        font-size: 14px;
+        line-height: 115%;
+        color: $ui-c-text;
+    }
+
+    &__text_bold {
+        font-weight: 700;
+    }
+
+    &__text_white {
+        color: #FFFFFF;
+    }
+
+    &__img {
+        width: 20px;
+        height: 20px;
+    }
+}
